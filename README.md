@@ -14,6 +14,27 @@ A [project](https://github.com/users/IrinaAdeniyi/projects/4/views/1) containing
 
 The wireframes for this website were created using [Balsamiq](https://balsamiq.com/education/)
 
+## Home Page
+![Homepage laptops wireframe](assets/wireframes/Home-laptops.png)
+![Homepage tablets wireframe](assets/wireframes/Home-tablets.png)
+![Homepage phones wireframe](assets/wireframes/Home-phones.png)
+
+## Services Page
+![Services laptops wireframe](assets/wireframes/Services-laptops.png)
+![Services tablets wireframe](assets/wireframes/Services-tablets.png)
+![Services phones wireframe](assets/wireframes/Services-phones.png)
+
+## Gallery Page
+![Gallery laptops wireframe](assets/wireframes/Gallery-laptops.png)
+![Gallery tablets wireframe](assets/wireframes/Gallery-tablets.png)
+![Gallery phones wireframe](assets/wireframes/Gallery-phones.png)
+
+## Book Now Page
+![BookNow laptops wireframe](assets/wireframes/BookNow-laptops.png)
+![BookNow tablets wireframe](assets/wireframes/BookNow-tablets.png)
+![BookNow phones wireframe](assets/wireframes/BookNow-phones.png)
+
+
 ### Laptop or similar size devices
 
 ### Tablet or similar size devices
