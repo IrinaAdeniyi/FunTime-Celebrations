@@ -35,12 +35,6 @@ The wireframes for this website were created using [Balsamiq](https://balsamiq.c
 ![BookNow phones wireframe](assets/wireframes/BookNow-phones.png)
 
 
-### Laptop or similar size devices
-
-### Tablet or similar size devices
-
-### Phone or similar size devices
-
 # Building process
 I started the project by creating the index.html and adding some of the links required in the project: meta links, favicons, CSS stylesheet, Bootstrap links, font awesome. I then created the layout of the home page.
 
@@ -62,7 +56,7 @@ Detailed testing was done on the website to ensure the website works properly.
 
 # Remaining bugs
 
-# Website testing
+# Website checks using validation tools
 
 # Deployment
 
