@@ -36,7 +36,11 @@ The wireframes for this website were created using [Balsamiq](https://balsamiq.c
 
 
 # Building process
-I started the project by creating the index.html and adding some of the links required in the project: meta links, favicons, CSS stylesheet, Bootstrap links, font awesome. I then created the layout of the home page.
+1. I started the project by creating the index.html and adding some of the links required in the project: meta links, favicons, CSS stylesheet, Bootstrap links, font awesome. I then created the layout of the home page.
+
+2. I then created the navigation bar and the remaining pages.
+
+3. I continued with the footer and played with some color options.
 
 # Features
 
@@ -45,14 +49,16 @@ Detailed testing was done on the website to ensure the website works properly.
 
 | Feature    | Expected behaviour | Outcome  |
 | -----------|:------------------:| --------:|
-|            |                    |          |
-|            |                    |          |
-|            |                    |          |
+| Header     | Looks good in all screen sizes|  Works as expected        |
+| Logo       | On click takes you to home page                   | Works as expected         |
+| Navigation bar | Active page bold, colapse on phone size                    |          |
 
 # Troubleshooting
 1. I had an initial issue with the favicon, as I was unsure how to create a new one for my website. After reading the documentation I was able to add the right favicon for my website and make it work.
 
-2.
+2. I encountered an issue with the navbar position, but after carefully reading the documentation on Bootstrap it was resolved.
+
+3. I struggled to position the text in the footer (Contact section) - but was resolved reading documentation 
 
 # Remaining bugs
 

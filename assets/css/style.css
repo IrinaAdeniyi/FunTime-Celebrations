@@ -1,0 +1,17 @@
+/* This pushes the footer to the bottom of the page and keeps it visible even when scrolling */
+
+/* Navbar */
+.navbar {
+    background-color: #FF80AB;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #333333;
+    color: #ffffff;
+}
+
