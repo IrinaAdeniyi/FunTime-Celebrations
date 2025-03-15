@@ -3,8 +3,8 @@
 
 /* CSS Variables */
 :root {
-    --primary-font: 'Poppins', sans-serif; /* Readable font */
-    --secondary-font: 'Fredoka', sans-serif; /* Playful heading font */
+    --primary-font: 'Poppins', sans-serif; 
+    --secondary-font: 'Fredoka', sans-serif; 
     --primary-color:#FF80AB; /* Soft Pink */
     --secondary-color: #AB47BC; /* Purple */
     --highlight-color: #4FC3F7; /* Sky Blue */ 
@@ -37,11 +37,12 @@ h1, h2, h3 {
 }
 
 /* Ovveride the navbar text color to keep the effect of the active class (show what page we are on) */
-.navbar-nav .nav-link.active {
+.nav-link.active {
     color: var(--secondary-color) !important; 
     font-weight: bold; 
 }
 
+/* Book now button on navbar */
 .btn-navbar {
     background-color: var(--highlight-color-light) !important; 
     color: white;
@@ -60,7 +61,7 @@ h1, h2, h3 {
 
 /* Main section */
 /* Hero section */
-.hero-bg {
+.hero {
     background: url('../images/ballons.jpg') no-repeat center center/cover;
     height: 80vh;
     display: flex;
@@ -70,7 +71,7 @@ h1, h2, h3 {
 }
 
 /* Book now button */
-.hero-bg .btn-custom {
+.hero .btn-custom {
     background-color: var(--primary-color); 
     border-color: var(--primary-color);
     color: white;
@@ -80,7 +81,7 @@ h1, h2, h3 {
     transition: all 0.3s ease-in-out;
 }
 
-.hero-bg .btn-custom:hover {
+.hero .btn-custom:hover {
     background-color: var(--secondary-color); 
     border-color: var(--secondary-color);
     color: white;
@@ -90,8 +91,7 @@ h1, h2, h3 {
 
 /* Footer */
 footer {
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
     padding: 10px 0;
     background-color: #333333;
@@ -101,7 +101,8 @@ footer {
 
 /* Media queries */
 @media (max-width: 768px) {
-    .hero-bg {
-        height: 60vh; /* Make it shorter on smaller screens */
+    .hero {
+      padding: 20px;
+       
     }
 }

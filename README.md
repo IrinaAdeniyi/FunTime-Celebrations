@@ -63,6 +63,12 @@ Detailed testing was done on the website to ensure the website works properly.
 
 4. While styling the navbar, the CSS I used to change the text colour in the navbar overrode the *active* class from Bootstrap. After researching I managed to find the solution by targeting the *active* class and giving it a different colour and style them bold.
 
+5. I discovered I used a redundant class for the hero section and rectified the mistake.
+
+6. The *About us* section on the home page kept showing next to the hero section. I managed to resolved this by using the flex-column class from Bootstrap.
+
+7. 
+
 # Remaining bugs
 
 # Website checks using validation tools
