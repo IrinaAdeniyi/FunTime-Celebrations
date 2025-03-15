@@ -1,9 +1,92 @@
-/* This pushes the footer to the bottom of the page and keeps it visible even when scrolling */
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-font: 'Poppins', sans-serif; /* Readable font */
+    --secondary-font: 'Fredoka', sans-serif; /* Playful heading font */
+    --primary-color:#FF80AB; /* Soft Pink */
+    --secondary-color: #AB47BC; /* Purple */
+    --highlight-color: #4FC3F7; /* Sky Blue */ 
+    --highlight-color-light: #FFD700; /* Bright Yellow */ 
+}
+
+/* Global Styles */
+body {
+    font-family: var(--primary-font); 
+    color: #333333; /* Dark gray text */
+    background-color: #F9F9F9; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    color: var(--primary-color); 
+}
 
 /* Navbar */
 .navbar {
-    background-color: #FF80AB;
+    background-color: var(--primary-color);
 }
+
+.navbar a {
+    color: #FFFFFF !important;
+}
+
+/* Ovveride the navbar text color to keep the effect of the active class (show what page we are on) */
+.navbar-nav .nav-link.active {
+    color: var(--secondary-color) !important; 
+    font-weight: bold; 
+}
+
+.btn-navbar {
+    background-color: var(--highlight-color-light) !important; 
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px; /* Rounded corners */
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.btn-navbar:hover {
+    background-color: #8E24AA !important; /* Darker purple on hover */
+    color: white;
+}
+
+/* Main section */
+/* Hero section */
+.hero-bg {
+    background: url('../images/ballons.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--highlight-color);
+}
+
+/* Book now button */
+.hero-bg .btn-custom {
+    background-color: var(--primary-color); 
+    border-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 20px; /* Rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-bg .btn-custom:hover {
+    background-color: var(--secondary-color); 
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+
 
 /* Footer */
 footer {
@@ -12,6 +95,13 @@ footer {
     width: 100%;
     padding: 10px 0;
     background-color: #333333;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
+
+/* Media queries */
+@media (max-width: 768px) {
+    .hero-bg {
+        height: 60vh; /* Make it shorter on smaller screens */
+    }
+}

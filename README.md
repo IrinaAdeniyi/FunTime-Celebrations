@@ -52,13 +52,16 @@ Detailed testing was done on the website to ensure the website works properly.
 | Header     | Looks good in all screen sizes|  Works as expected        |
 | Logo       | On click takes you to home page                   | Works as expected         |
 | Navigation bar | Active page bold, colapse on phone size       | Works as expected         |
+|
 
 # Troubleshooting
 1. I had an initial issue with the favicon, as I was unsure how to create a new one for my website. After reading the documentation I was able to add the right favicon for my website and make it work.
 
 2. I encountered an issue with the navbar position, but after carefully reading the documentation on Bootstrap it was resolved.
 
-3. I struggled to position the text in the footer (Contact section) - but was resolved reading documentation 
+3. I struggled to position the text in the footer (Contact section) - but was resolved reading documentation. 
+
+4. While styling the navbar, the CSS I used to change the text colour in the navbar overrode the *active* class from Bootstrap. After researching I managed to find the solution by targeting the *active* class and giving it a different colour and style them bold.
 
 # Remaining bugs
 
