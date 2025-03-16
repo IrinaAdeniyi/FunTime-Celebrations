@@ -12,19 +12,22 @@
 }
 
 /* Global Styles */
-body {
-    font-family: var(--primary-font); 
-    color: #333333; /* Dark gray text */
-    background-color: #F9F9F9; /* Light gray background */
+html, body {
+    height: auto;
+    overflow-y: auto;
     margin: 0;
     padding: 0;
 }
 
+body p {
+    font-family: var(--primary-font); 
+}
+
 /* Headings */
-h1, h2, h3 {
+h1, 
+h2, 
+h3 {
     font-family: var(--secondary-font);
-    font-weight: 700;
-    color: var(--primary-color); 
 }
 
 /* Navbar */
@@ -55,19 +58,34 @@ h1, h2, h3 {
 }
 
 .btn-navbar:hover {
-    background-color: #8E24AA !important; /* Darker purple on hover */
+    background-color: var(--secondary-color) !important; 
     color: white;
 }
 
 /* Main section */
+main {
+    background-color: #FFF9C4; /* Light yellow */
+}
+
 /* Hero section */
 .hero {
     background: url('../images/ballons.jpg') no-repeat center center/cover;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.custom-heading {
     color: var(--highlight-color);
+}
+
+.custom-heading2 {
+    color: var(--secondary-color);
+}
+
+.custom-paragraph {
+    color: #333333; /* Dark gray text */
 }
 
 /* Book now button */
@@ -77,6 +95,7 @@ h1, h2, h3 {
     color: white;
     font-weight: bold;
     padding: 12px 24px;
+    margin-bottom: 50px;
     border-radius: 20px; /* Rounded corners */
     transition: all 0.3s ease-in-out;
 }
@@ -87,7 +106,15 @@ h1, h2, h3 {
     color: white;
 }
 
-
+/* About us */
+.about-us {
+    background-color: rgba(255, 255, 0, 0.3); /* Light yellow with 60% opacity */
+    display: inline-block; 
+    border-radius: 10px;
+    height: 275px;
+    width: 80%;
+    padding-bottom: 20px;
+}
 
 /* Footer */
 footer {
@@ -100,9 +127,13 @@ footer {
 
 
 /* Media queries */
-@media (max-width: 768px) {
-    .hero {
-      padding: 20px;
-       
-    }
+@media only screen and (max-width: 567px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 992px) {
+    
 }
