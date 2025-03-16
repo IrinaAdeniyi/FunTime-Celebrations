@@ -69,7 +69,7 @@ main {
 
 /* Hero section */
 .hero {
-    background: url('../images/ballons.jpg') no-repeat center center/cover;
+    background: url('../images/ballons\ 2\ copy.jpg') no-repeat center center/cover;
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -81,9 +81,9 @@ main {
     color: var(--highlight-color);
 }
 
-.custom-heading2 {
+/* .custom-heading2 {
     color: var(--secondary-color);
-}
+} */
 
 .custom-paragraph {
     color: #333333; /* Dark gray text */
