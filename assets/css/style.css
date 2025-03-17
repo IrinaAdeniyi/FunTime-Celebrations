@@ -30,6 +30,8 @@ h3 {
     font-family: var(--secondary-font);
 }
 
+/* HOME PAGE */
+
 /* Navbar */
 .navbar {
     background-color: var(--primary-color);
@@ -81,10 +83,6 @@ main {
     color: var(--highlight-color);
 }
 
-/* .custom-heading2 {
-    color: var(--secondary-color);
-} */
-
 .custom-paragraph {
     color: #333333; /* Dark gray text */
 }
@@ -109,11 +107,11 @@ main {
 
 /* About us */
 .about-us {
-    background-color: rgba(255, 255, 0, 0.3); /* Light yellow with 60% opacity */
+    background-color: rgba(255, 255, 0, 0.3); /* Light yellow with 30% opacity */
     display: inline-block; 
     border-radius: 10px;
     height: 275px;
-    width: 80%;
+    width: 92%;
     padding-bottom: 20px;
 }
 
@@ -130,21 +128,21 @@ main {
 }
 
 .card-body {
-    flex-grow: 1; /* Content expands to fill the card */
+    flex-grow: 1; /* Content fills the card */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /*Keeps the button at the bottom*/
+    justify-content: space-between; /*Keeps the button at the bottom of the card*/
     text-align: center;
 }
 
 .card-img-top {
-    height: 200px; /* Adjust height as needed */
-    object-fit: cover; /* Ensures images don't stretch */
+    height: 200px; 
+    object-fit: cover;
     width: 100%;
 }
 
 .btn {
-    align-self: center; /* Centers the button */
+    align-self: center; 
 }
 
 /* Footer */
@@ -155,6 +153,21 @@ footer {
     background-color: #333333;
     color: #FFFFFF;
 }
+
+/* SERVICES PAGE */
+
+.services {
+    background: linear-gradient(
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3)), 
+    url('../images/services.jpg') no-repeat center center/cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
 
 
 /* Media queries */
@@ -203,5 +216,9 @@ footer {
         text-align: center;
         margin-bottom: 20px;
     }
+}
+
+@media (min-width: 960px) {
+    
 }
 
