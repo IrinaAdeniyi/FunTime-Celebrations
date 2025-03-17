@@ -69,7 +69,7 @@ main {
 
 /* Hero section */
 .hero {
-    background: url('../images/ballons\ 2\ copy.jpg') no-repeat center center/cover;
+    background: url('../images/ballons.jpg') no-repeat center center/cover;
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -115,6 +115,36 @@ main {
     height: 275px;
     width: 80%;
     padding-bottom: 20px;
+}
+
+/* Services section */
+.card-margin {
+    margin-bottom: 60px;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.card-body {
+    flex-grow: 1; /* Content expands to fill the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*Keeps the button at the bottom*/
+    text-align: center;
+}
+
+.card-img-top {
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures images don't stretch */
+    width: 100%;
+}
+
+.btn {
+    align-self: center; /* Centers the button */
 }
 
 /* Footer */
