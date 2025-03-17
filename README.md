@@ -42,6 +42,12 @@ The wireframes for this website were created using [Balsamiq](https://balsamiq.c
 
 3. I continued with the footer and played with some color options.
 
+4. I then added the header and the *About us* section.
+
+5. I proceeded to work on the *Services* section on the *Home* page.
+
+6. I further styled the navbar and made the page responsive on mobiles and tablets. I finally tested the home page and moved to the next page *Services*.
+
 # Features
 
 # Testing 
@@ -51,8 +57,10 @@ Detailed testing was done on the website to ensure the website works properly.
 | -----------|:------------------:| --------:|
 | Header     | Looks good in all screen sizes|  Works as expected        |
 | Logo       | On click takes you to home page                   | Works as expected         |
-| Navigation bar | Active page bold, colapse on phone size       | Works as expected         |
-|
+| Navigation bar | Active page bold, colapse on phone size, logo only on mobile       | Works as expected         |
+| Book now button on navbar and header | Takes you to Book now page | Works as expected
+| Abouts us section | Looks good in all screen sizes | Works as expected |
+| Services section on home page | Links take you to the services page and cards display properly in all screen sizes | Works as expected
 
 # Troubleshooting
 1. I had an initial issue with the favicon, as I was unsure how to create a new one for my website. After reading the documentation I was able to add the right favicon for my website and make it work.
@@ -67,7 +75,11 @@ Detailed testing was done on the website to ensure the website works properly.
 
 6. The *About us* section on the home page kept showing next to the hero section. I managed to resolved this by using the flex-column class from Bootstrap.
 
-7. 
+7. I had issues with the way the page was scrolling and after investigating I realised I set a height to the hero section, which was interfering with the way the page was displayed - it was cut instead of scrolling.
+
+8. The home page was not showing properly on mobiles and tablets, so I used media queries to adjust how the navbar, text, cards and footer look on these screens.
+
+
 
 # Remaining bugs
 
