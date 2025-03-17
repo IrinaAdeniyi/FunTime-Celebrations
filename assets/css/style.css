@@ -158,13 +158,50 @@ footer {
 
 
 /* Media queries */
-@media only screen and (max-width: 567px) {
-    
-}
-@media only screen and (max-width: 768px) {
-    
+
+/* Smaller smartphones */
+@media (max-width: 576px) {
+    .card {
+        margin-top: 15px;
+    }
+
+    .brand-text {
+        display: none;  /* Hide FunTime Celebrations text from navbar on mobile */
+    }
 }
 
-@media only screen and (max-width: 992px) {
-    
+/* Larger smartphones and small tablets */
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        background: var(--primary-color);
+        padding: 10px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: auto;
+    } 
+
+    .hero h1 {
+        font-size: 28px; 
+    }
+    .hero p {
+        font-size: 16px;
+    }
+
+    .about-us {
+        height: auto; /* Remove fixed height */
+        width: 90%;
+        padding: 20px;
+    }
+
+    footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
+
