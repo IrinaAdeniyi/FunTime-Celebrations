@@ -7,8 +7,9 @@
     --secondary-font: 'Fredoka', sans-serif; 
     --primary-color:#FF80AB; /* Soft Pink */
     --secondary-color: #AB47BC; /* Purple */
-    --highlight-color: #4FC3F7; /* Sky Blue */ 
+    --highlight-color: #4B2377; /* Dark Purple*/ 
     --highlight-color-light: #FFD700; /* Bright Yellow */ 
+     --highlight-color-dark: #C2185B; /* Vibrant pink */
 }
 
 /* Global Styles */
@@ -20,14 +21,14 @@ html, body {
 }
 
 body p {
-    font-family: var(--primary-font); 
+    font-family: var(--secondary-font); 
 }
 
 /* Headings */
 h1, 
 h2, 
 h3 {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
 }
 
 /* HOME PAGE */
@@ -94,7 +95,7 @@ main {
     color: white;
     font-weight: bold;
     padding: 12px 24px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     border-radius: 20px; /* Rounded corners */
     transition: all 0.3s ease-in-out;
 }
@@ -110,9 +111,8 @@ main {
     background-color: rgba(255, 255, 0, 0.3); /* Light yellow with 30% opacity */
     display: inline-block; 
     border-radius: 10px;
-    height: 275px;
+    height: 430px;
     width: 92%;
-    padding-bottom: 20px;
 }
 
 /* Services section */
@@ -131,7 +131,8 @@ main {
     flex-grow: 1; /* Content fills the card */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /*Keeps the button at the bottom of the card*/
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
 }
 
@@ -141,9 +142,37 @@ main {
     width: 100%;
 }
 
+/* Change card title colour */
+.custom-title {
+    color: #333333 !important;
+    font-family: var(--primary-font);
+}
+
+/* Change card body colour */
+.custom-body {
+    color: #666666 !important;
+    font-family: var(--secondary-font);
+}
+
 .btn {
     align-self: center; 
 }
+
+/* Change cards button color */
+.btn-card {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-card:hover {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
 
 /* Footer */
 footer {
@@ -158,8 +187,8 @@ footer {
 
 .services {
     background: linear-gradient(
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.3)), 
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)), 
     url('../images/services.jpg') no-repeat center center/cover;
     min-height: 80vh;
     display: flex;
