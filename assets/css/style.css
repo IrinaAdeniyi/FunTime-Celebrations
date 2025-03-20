@@ -9,7 +9,7 @@
     --secondary-color: #AB47BC; /* Purple */
     --highlight-color: #4B2377; /* Dark Purple*/ 
     --highlight-color-light: #FFD700; /* Bright Yellow */ 
-     --highlight-color-star: #89CFF0; /* Vibrant pink */
+     --highlight-color-star: #89CFF0; /* Sky blue */
 }
 
 /* Global Styles */
@@ -218,67 +218,87 @@ ul {
     color: var(--primary-color);
 }
 
-/* Prices section */
-    .card-container {
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin: 50px;
-    }
-  
-    #card1
-    #card2
-    #card3
-    #card4 {
-        width: 200px;
-        height: 300px;
-        perspective: 1000px; /* 3D perspective */
-    }
-  
-      /* Flip effect */
-    .card-inner {
-        width: 100%;
-        height: 100%;
-        transition: transform 0.5s;
-        transform-style: preserve-3d;
-        position: relative;
-    }
-  
-      /* Flip the card on hover */
-    .card:hover .card-inner {
-        transform: rotateY(180deg);
-    }
-  
-      /* Front of the card */
-    .card-front,
-    .card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden; /* Prevent backface from showing when flipped */
-    }
-  
-    .card-front {
-        background-color: var(--highlight-color-light);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #333333;
-        font-size: 20px;
-        font-weight: bold;
-    }
-  
-      /* Back card */
-    .card-back {
-        background-color: var(--highlight-color-star);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #333333;
-        font-size: 18px;
-        transform: rotateY(180deg); /* Initially hidden */
-    }
-  
+/* Flip cards */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row-flip-card {
+    margin: 50px -5px;
+}
+
+.row-flip-card:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1; 
+    perspective: 1000px; /* 3D effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* card effect*/
+    text-align: center;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;  /* Safari */
+    backface-visibility: hidden;
+}
+
+.front-text {
+    position: absolute;
+    top: 20px;
+    padding-left: 65px;
+    color: var(--highlight-color);
+    font-family: var(--primary-font);
+}
+
+  /* Style the back side */
+.flip-card-back {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    transform: rotateY(180deg);
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media queries */
 
@@ -291,6 +311,13 @@ ul {
     .brand-text {
         display: none;  /* Hide FunTime Celebrations text from navbar on mobile */
     }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
 }
 
 /* Larger smartphones and small tablets */
@@ -326,6 +353,8 @@ ul {
         text-align: center;
         margin-bottom: 20px;
     }
+
+    
 }
 
 @media (min-width: 960px) {
