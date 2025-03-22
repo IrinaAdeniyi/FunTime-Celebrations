@@ -53,7 +53,7 @@
                 <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-navbar active" aria-current="page" href="book-now.html">Book Now</a>
+                <a class="nav-link active" href="book-now.html">Book Now</a>
               </li>
             </ul>
           </div>
@@ -63,10 +63,12 @@
     
     <!-- Main -->
     <main>
-      <form class="row g-3 booking-form">
+      <section class="book-now-hero">
+      <h2 class="custom-heading text-center fw-bold">Book Your Party</h2>
+      <form action="confirmation.html" method="get" class="row g-3 custom-paragraph">
         <div class="col-md-6">
           <label for="parentName" class="form-label">Parent's full name</label>
-          <input type="text" class="form-control" id="parentName">
+          <input type="text" class="form-control" id="parentName" required>
         </div>
         <div class="col-md-6">
           <label for="childName" class="form-label">Child's full name and age (optional)</label>
@@ -74,17 +76,18 @@
         </div>
         <div class="col-md-6">
           <label for="emailAddress" class="form-label">Email</label>
-          <input type="email" class="form-control" id="emailAddress">
+          <input type="email" class="form-control" id="emailAddress" required>
         </div>
         <div class="col-md-6">
           <label for="phoneNumber" class="form-label">Phone number</label>
-          <input type="number" class="form-control" id="phoneNumber">
+          <input type="number" class="form-control" id="phoneNumber" required>
         </div>
         
         <div class="col-md-6">
           <label for="partyPackage" class="form-label">Party Package</label>
-          <select id="partyPackage" class="form-select">
-            <option selected>Party Package 1 - theme only</option>
+          <select id="partyPackage" class="form-select" required>
+            <option value="" disabled selected>-- Please choose a package --</option>
+            <option>Party Package 1 - theme only</option>
             <option>Party Package 1 - entertainment only</option>
             <option>Party Package 1 - food only</option>
             <option>Party Package 2 - theme and entertainment</option>
@@ -100,18 +103,19 @@
 
         <div class="col-md-3 pt-2 form-group">
           <label for="date">Select Date:</label>
-          <input type="date" class="form-control" id="date">
+          <input type="date" class="form-control" id="date" required>
         </div>
 
         <div class="col-md-3 pt-2 form-group">
           <label for="time">Select Time:</label>
-          <input type="time" class="form-control" id="time">
+          <input type="time" class="form-control" id="time" required>
         </div>
 
         <div class="col-md-6">
           <label for="theme" class="form-label">Theme</label>
-          <select id="theme" class="form-select">
-            <option selected>Superhero Adventure</option>
+          <select id="theme" class="form-select" required>
+            <option value="" disabled selected>-- Please choose a theme --</option>
+            <option>Superhero Adventure</option>
             <option>Princess or Prince Party</option>
             <option>Under the Sea</option>
             <option>Dinosaur Dig</option>
@@ -127,8 +131,9 @@
 
         <div class="col-md-6">
           <label for="entertainment" class="form-label">Entertainment</label>
-          <select id="entertainment" class="form-select">
-            <option selected>Magic Show</option>
+          <select id="entertainment" class="form-select" required>
+            <option value="" disabled selected>-- Please choose entertainment --</option>
+            <option>Magic Show</option>
             <option>Clown</option>
             <option>Role Play</option>
             <option>Party Games</option>
@@ -139,16 +144,17 @@
         </div>
         
         <div class="col-md-12 mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Please write any other comments/questions/requirements in the box below</label>
+          <label for="exampleFormControlTextarea1" class="form-label">Please write any other comments/ questions/ requirements in the box below</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         
         
 
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Book Party</button>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-lg btn-custom">Book Party</button>
         </div>
       </form>
+    </section>
     </main>
 
     <!-- Footer -->
@@ -188,16 +194,11 @@
       </div>
     </footer>
     
-    
-
-    
     <!-- Bootstrap 5 JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/ff55b05e75.js" crossorigin="anonymous"></script>

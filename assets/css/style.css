@@ -34,11 +34,11 @@ h3 {
 .links-colour {
     color: var(--highlight-color);
 }
-/* HOME PAGE */
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
     background-color: var(--primary-color);
+    font-family: var(--primary-font);
 }
 
 .navbar a {
@@ -51,31 +51,14 @@ h3 {
     font-weight: bold; 
 }
 
-/* Book now button on navbar */
-.btn-navbar {
-    background-color: var(--highlight-color-light) !important; 
-    color: white;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 20px; /* Rounded corners */
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    display: inline-block;
-}
-
-.btn-navbar:hover {
-    background-color: var(--secondary-color) !important; 
-    color: white;
-}
-
-/* Main section */
+/* HOME PAGE */
 main {
     background-color: #FFF9C4; /* Light yellow */
 }
 
 /* Hero section */
 .hero {
-    background: url('../images/ballons.jpg') no-repeat center center/cover;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -179,23 +162,13 @@ main {
     border-color: var(--secondary-color) !important;
 }
 
-
-/* Footer */
-footer {
-    position: relative;
-    width: 100%;
-    padding: 10px 0;
-    background-color: #333333;
-    color: #FFFFFF;
-}
-
 /* SERVICES PAGE */
 
 .services {
     background: linear-gradient(
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.1)), 
-    url('../images/services.jpg') no-repeat center center/cover;
+    url('../images/hero.jpg') no-repeat center center/cover;
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -290,9 +263,66 @@ ul {
     font-size: large;
 }
 
-/* Booking form page */
-.booking-form{
+/* BOOKING FORM PAGE */
+.book-now-hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    min-height: 80vh;
     padding: 30px 350px;
+}
+
+/* Book now button */
+.book-now-hero .btn-custom {
+    background-color: var(--primary-color); 
+    border-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    margin-bottom: -5px;
+    border-radius: 20px; /* Rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+
+.book-now-hero .btn-custom:hover {
+    background-color: var(--secondary-color); 
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+/* CONFIRMATION PAGE */
+.confirmation-hero {
+    background: url('../images/ballons.jpg') no-repeat center center/cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Book now button */
+.confirmation-hero .btn-custom {
+    background-color: var(--primary-color); 
+    border-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    margin-bottom: 30px;
+    border-radius: 20px; /* Rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+
+.confirmation-hero .btn-custom:hover {
+    background-color: var(--secondary-color); 
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #333333;
+    color: #FFFFFF;
+    font-family: var(--primary-font);
 }
 
 
@@ -306,7 +336,7 @@ ul {
 
 /* Media queries */
 
-/* Smaller smartphones */
+/* Phones */
 @media (max-width: 576px) {
     .card {
         margin-top: 15px;
@@ -338,10 +368,15 @@ ul {
         padding-left: 15px;
     }
 
+    .book-now-hero {
+        padding: 70px;
+        width: auto;
+    }
+
 }
 
-/* Larger smartphones and small tablets */
-@media only screen and (min-width: 567px) and (max-width: 768px) {
+/* Tablets and Laptops */
+@media only screen and (min-width: 768px) {
     .navbar-collapse {
         background: var(--primary-color);
         padding: 10px;
@@ -356,16 +391,22 @@ ul {
         height: auto;
     } 
 
-    .hero h1 {
+    .hero 
+    .services 
+    .book-now-hero 
+    .confirmation-hero h1 {
         font-size: 28px; 
     }
-    .hero p {
+    .hero 
+    .services 
+    .book-now-hero 
+    .confirmation-hero p {
         font-size: 16px;
     }
 
     .about-us {
-        height: auto; /* Remove fixed height */
-        width: 90%;
+        height: auto;
+        width: 85%;
         padding: 20px;
     }
 
@@ -380,9 +421,12 @@ ul {
         width: 50%;
         margin-bottom: 40px;
     }
+
+    .book-now-hero {
+        padding: 70px 70px;
+        margin-bottom: -50px;
+    }
+
 }
 
-@media (min-width: 960px) {
-    
-}
 
