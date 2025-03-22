@@ -55,6 +55,15 @@ h3 {
     font-weight: bold; 
 }
 
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1); /*white burger menu*/
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px white !important;
+}  
+
+
 /* HOME PAGE */
 main {
     background-color: var(--highlight-color-light); /* Light yellow */
@@ -363,7 +372,7 @@ footer {
     }
 
     .about-us {
-        height: auto; /* Remove fixed height */
+        height: auto; 
         width: 90%;
         padding: 10px;
     }
@@ -394,6 +403,7 @@ footer {
     .navbar-collapse {
         background: var(--primary-color);
         padding: 10px;
+        
     }
 
     .navbar {
@@ -420,7 +430,7 @@ footer {
 
     .about-us {
         height: auto;
-        width: 85%;
+        width: 76%;
         padding: 20px;
     }
 
@@ -448,6 +458,12 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+    .about-us {
+        height: auto;
+        width: 91%;
+        padding: 20px;
+    }
+
     #photos {
         column-count: 3;   
     }
