@@ -8,7 +8,7 @@
     --primary-color:#FF80AB; /* Soft Pink */
     --secondary-color: #AB47BC; /* Purple */
     --highlight-color: #4B2377; /* Dark Purple*/ 
-    --highlight-color-light: #FFD700; /* Bright Yellow */ 
+    --highlight-color-light: #f5e6ff;/*#FFD700; Bright Yellow */ 
      --highlight-color-star: #89CFF0; /* Sky blue */
 }
 
@@ -57,7 +57,7 @@ h3 {
 
 /* HOME PAGE */
 main {
-    background-color: #FFF9C4; /* Light yellow */
+    background-color: var(--highlight-color-light); /* Light yellow */
 }
 
 /* Hero section */
@@ -269,21 +269,7 @@ ul {
 
 /* GALLERY PAGE */
 
-#photos img {
-    width: 100%;
-    line-height: 1em;
-}
-
 #photos {
-    line-height: 0;
-}
-
-#photos {
-    column-count: 3;   
-}
-
-#photos {
-    column-count: 4;
     column-gap: 0;
 }
 
@@ -392,6 +378,10 @@ footer {
         padding-left: 15px;
     }
 
+    #photos {
+        column-count: 1;   
+    }
+
     .book-now-hero {
         padding: 70px;
         width: auto;
@@ -446,15 +436,21 @@ footer {
         margin-bottom: 40px;
     }
 
+    #photos {
+        column-count: 2;   
+    }
+
     .book-now-hero {
         padding: 70px 70px;
         margin-bottom: -50px;
     }
 
+}
+
+@media only screen and (min-width: 992px) {
     #photos {
         column-count: 3;   
     }
-
 }
 
 
