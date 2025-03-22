@@ -31,6 +31,10 @@ h3 {
     font-family: var(--primary-font);
 }
 
+.hide-headings {
+    display: none;
+}
+
 .links-colour {
     color: var(--highlight-color);
 }
@@ -263,6 +267,26 @@ ul {
     font-size: large;
 }
 
+/* GALLERY PAGE */
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
+#photos {
+    column-count: 3;   
+}
+
+#photos {
+    column-count: 4;
+    column-gap: 0;
+}
+
 /* BOOKING FORM PAGE */
 .book-now-hero {
     background: url('../images/hero.jpg') no-repeat center center/cover;
@@ -425,6 +449,10 @@ footer {
     .book-now-hero {
         padding: 70px 70px;
         margin-bottom: -50px;
+    }
+
+    #photos {
+        column-count: 3;   
     }
 
 }
