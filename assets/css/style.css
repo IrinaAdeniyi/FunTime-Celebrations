@@ -284,12 +284,16 @@ ul {
   /* Style the back side */
 .flip-card-back {
     background-color: var(--secondary-color);
+    font-family: var(--secondary-font);
     color: #ffffff;
     transform: rotateY(180deg);
     font-size: large;
 }
 
-
+/* Booking form page */
+.booking-form{
+    padding: 30px 350px;
+}
 
 
 
@@ -318,10 +322,26 @@ ul {
         margin-bottom: 20px;
     }
 
+    .about-us {
+        height: auto; /* Remove fixed height */
+        width: 90%;
+        padding: 10px;
+    }
+
+    footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .flip-card {
+        max-width: 100%;
+        padding-left: 15px;
+    }
+
 }
 
 /* Larger smartphones and small tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 567px) and (max-width: 768px) {
     .navbar-collapse {
         background: var(--primary-color);
         padding: 10px;
@@ -354,7 +374,12 @@ ul {
         margin-bottom: 20px;
     }
 
-    
+    .column-responsive {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        margin-bottom: 40px;
+    }
 }
 
 @media (min-width: 960px) {
