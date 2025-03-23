@@ -142,6 +142,10 @@ main {
     margin-top: 30px;
 }
 
+.card-title {
+    margin-bottom: 30px !important;
+}
+
 .card-body {
     flex-grow: 1; /* Content fills the card */
     display: flex;
