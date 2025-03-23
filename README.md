@@ -1,52 +1,77 @@
-# FunTime-Celebrations
+# 🎉FunTime-Celebrations
 
 ## Get to know us 
 
-- FunTime Celebrations is a party organising service for parents. Whether it is a birthday anniversary or a special event, we are here to bring all visions to life, taking the stress away from you. 
-- With years of experience and a passion for creating unforgettable experiences, we handle everything from decorations to entertainment, ensuring that all events are memorable and stress-free.
-- On our website you can find a wide range of services, contact information and a booking form, view photos from past events and discover how we can make your next celebration truly special!
+- A responsive, multi-page website built with HTML, CSS, and Bootstrap, showcasing fun and vibrant party themes for children’s celebrations. The project includes a gallery, service descriptions, and booking information, optimized for both desktop and mobile devices.
+- FunTime Celebrations is a party organising service for parents. FunTime Celebrations offers the following services: themed parties, various entertainments, options for venues and catering, through different packages. 
 
-# GitHub User Story Project
+##  🚀  Live Demo
+
+👉 View the website [here]()
+
+## 🛠 Technologies Used
+
+HTML5
+
+CSS3
+
+Bootstrap 5
+
+## GitHub User Story Project
 
 A [project](https://github.com/users/IrinaAdeniyi/projects/4/views/1) containing user stories with acceptance criteria and tasks was created in GitHub. This was done to easily organize and prioritize work, as well as defining clear requirements and tracking progress.
 
-# Wireframes
+## Wireframes
 
 The wireframes for this website were created using [Balsamiq](https://balsamiq.com/education/)
 
-## Home Page
+*Disclaimer: The wireframes shown are for demonstration purposes only. The final implementation may vary from these initial representations.
+
+### Home Page
 ![Homepage laptops wireframe](assets/wireframes/Home-laptops.png)
 ![Homepage tablets wireframe](assets/wireframes/Home-tablets.png)
 ![Homepage phones wireframe](assets/wireframes/Home-phones.png)
 
-## Services Page
+### Services Page
 ![Services laptops wireframe](assets/wireframes/Services-laptops.png)
 ![Services tablets wireframe](assets/wireframes/Services-tablets.png)
 ![Services phones wireframe](assets/wireframes/Services-phones.png)
 
-## Gallery Page
+### Gallery Page
 ![Gallery laptops wireframe](assets/wireframes/Gallery-laptops.png)
 ![Gallery tablets wireframe](assets/wireframes/Gallery-tablets.png)
 ![Gallery phones wireframe](assets/wireframes/Gallery-phones.png)
 
-## Book Now Page
+### Book Now Page
 ![BookNow laptops wireframe](assets/wireframes/BookNow-laptops.png)
 ![BookNow tablets wireframe](assets/wireframes/BookNow-tablets.png)
 ![BookNow phones wireframe](assets/wireframes/BookNow-phones.png)
 
 
-# Building process
+## Building process
 1. I started the project by creating the index.html and adding some of the links required in the project: meta links, favicons, CSS stylesheet, Bootstrap links, font awesome. I then created the layout of the home page.
 
-2. I then created the navigation bar and the remaining pages.
+2. I followed with the navigation bar and I created the remaining pages, adding the navbar, the boilerplate structure and the footer on each page.
 
-3. I continued with the footer and played with some color options.
+3. I played with some color options to find something that I would like.
 
 4. I then added the header and the *About us* section.
 
 5. I proceeded to work on the *Services* section on the *Home* page.
 
 6. I further styled the navbar and made the page responsive on mobiles and tablets. I finally tested the home page and moved to the next page *Services*.
+
+7. On the services page I firstly added the background photo and text for each service: themes, entertainment, venues and food.
+
+8. I then investigated how I can add some flip cards to present the offered packages. I struggled to make it work with Bootstrap, but managed to use some advice some W3Schools and make the cards flip.
+
+9. I tested the *Services* page's links and responsiveness and made the necessary corrections.
+
+10. As the *Gallery* page was a *should-have* page, I decided to continue with the booking form page, which was a *must-have*.
+
+11. For the *Book Now* page I used a Bootstrap Form and added field for personal details like name and age, for email and phone number. I used dropdowns for *Party Package*, *Date and Time*, *Theme*, and *Enterntaiment*. Finally, I choose a textbox which requires the number of guests and offers flexibility to add any other requests or comments.
+
+12. I continued by adding the background of the page, the title of the page and the 
 
 # Features
 

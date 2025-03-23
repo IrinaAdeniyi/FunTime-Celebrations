@@ -305,7 +305,7 @@ ul {
     color: var(--highlight-color);
     font-weight: bold;
     padding: 12px 24px;
-    margin-bottom: -5px;
+    margin-bottom: 20px;
     border-radius: 20px; /* Rounded corners */
     transition: all 0.3s ease-in-out;
 }
