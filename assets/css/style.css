@@ -113,7 +113,6 @@ main {
 
 /* About us */
 .about-us {
-    /* background-color: rgba(255, 192, 203, 0.1);  */
     display: inline-block; 
     border-radius: 10px;
     height: 430px;
@@ -126,11 +125,10 @@ main {
 }
 
 .card {
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
     margin-top: 30px;
 }
 
@@ -179,6 +177,14 @@ main {
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+}
+
+/* Contain page text */
+.style-services {
+    display: inline-block; 
+    border-radius: 10px;
+    height: 1350px;
+    width: 92%;
 }
 
 /* No bullet points */
@@ -333,7 +339,7 @@ footer {
 /* MEDIA QUERIES */
 
 /* Phones */
-@media (max-width: 576px) {
+@media (max-width: 663px) {
     .card {
         margin-top: 15px;
     }
@@ -353,7 +359,11 @@ footer {
 
     .about-us {
         height: auto; 
-        width: 90%;
+        padding: 10px;
+    }
+
+    .style-services {
+        height: auto; 
         padding: 10px;
     }
 
@@ -373,6 +383,14 @@ footer {
     }
 
 }
+
+/* Resolve card image on screens between 327px and 575px */
+@media (min-width: 327px) and (max-width: 575px) {
+    .card-img-top {
+        height: 350px; 
+    }
+}
+
 @media only screen and (max-width:767px){
     .navbar-collapse {
         background: var(--primary-color);
@@ -381,7 +399,7 @@ footer {
 }
 
 /* Tablets and Laptops */
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 663px) {
     .navbar {
         padding: 10px;
     }
@@ -407,13 +425,12 @@ footer {
 
     .about-us {
         height: auto;
-        width: 76%;
         padding: 20px;
     }
 
-    footer .col-md-4 {
-        text-align: center;
-        margin-bottom: 20px;
+    .style-services {
+        height: auto;
+        padding: 20px;
     }
     
     /* Flip cards */
@@ -434,7 +451,11 @@ footer {
         padding: 70px 70px;
         margin-bottom: -50px;
     }
-
+    
+    footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
 /* Bigger screens */
