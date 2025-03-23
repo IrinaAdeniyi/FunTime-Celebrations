@@ -52,6 +52,15 @@ h3 {
     color: var(--highlight-color) !important;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-text {
+    margin:8px;
+}
+
 /* Ovveride the navbar text color to keep the effect of the active class (show what page we are on) */
 .nav-link.active {
     color: var(--secondary-color) !important; 
