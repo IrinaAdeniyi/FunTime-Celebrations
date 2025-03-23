@@ -316,7 +316,7 @@ ul {
 .confirmation-hero .btn-custom {
     background-color: var(--primary-color); 
     border-color: var(--primary-color);
-    color: white;
+    color: var(--highlight-color);
     font-weight: bold;
     padding: 12px 24px;
     margin-bottom: 30px;
