@@ -395,6 +395,7 @@ footer {
     .navbar-collapse {
         background: var(--primary-color);
         padding: 10px; 
+        margin-top: 10px;
     }
 }
 
