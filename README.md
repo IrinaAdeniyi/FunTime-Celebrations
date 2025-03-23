@@ -71,11 +71,50 @@ The wireframes for this website were created using [Balsamiq](https://balsamiq.c
 
 11. For the *Book Now* page I used a Bootstrap Form and added field for personal details like name and age, for email and phone number. I used dropdowns for *Party Package*, *Date and Time*, *Theme*, and *Enterntaiment*. Finally, I choose a textbox which requires the number of guests and offers flexibility to add any other requests or comments.
 
-12. I continued by adding the background of the page, the title of the page and the 
+12. I continued by adding the background of the page, the title of the page and the booking button.
 
-# Features
+13. Once the *Book Now* page was fully responsive, I created a *Confirmation* page, to present the user with, once they press the *Book Party* button.
 
-# Testing 
+14. I styled the *Confirmation* page to fit with the rest of the website: it has a navbar and footer, a background picture, a button matching the othe rbuttons on the website and same fonts as the rest of the website.
+
+15. The button on this page takes the user back to the home page.
+
+16. Finally, I created the *Gallery* page. This page was created by using the *img-fluid* bootstrap class.
+
+17. Once I completed the website, I checked that all links and buttons work as expected. I then tested for responsiveness on all pages and made the necessary adjustments. 
+
+18. Once I finalised the manual checks, I used tools like HTML and CSS validators, as well as the Lighthouse feature in Chrome DevTools. The lighthouse tool higlighted some issues that were resolved to the best of my ability.
+
+19. Finally the README file was updated.
+
+## 📂 Project Structure
+- **assets/**: Contains the static files for the website.
+  - **css/**: The folder containing the main styles for the site (style.css).
+  - **images/**: Contains all images for the website, with subfolders for the favicon, gallery and logo images.
+- **HTML files**: The main content pages of the website:
+  - `book-now.html`: The booking page.
+  - `confirmation.html`: The confirmation page after booking.
+  - `gallery.html`: The page displaying the gallery.
+  - `index.html`: The homepage.
+  - `services.html`: The page showcasing the services.
+
+## Features
+1. Navbar with logo and links to different pages
+
+
+
+
+2. Flip cards to showcase different party themes
+
+3. Image gallery for inspiration
+
+4. Booking call-to-action
+
+5. Clean and simple navigation bar
+
+6. Footer with contact and social links
+
+## Testing 
 Detailed testing was done on the website to ensure the website works properly.
 
 | Feature    | Expected behaviour | Outcome  |
@@ -87,7 +126,7 @@ Detailed testing was done on the website to ensure the website works properly.
 | Abouts us section | Looks good in all screen sizes | Works as expected |
 | Services section on home page | Links take you to the services page and cards display properly in all screen sizes | Works as expected
 
-# Troubleshooting
+## Troubleshooting
 1. I had an initial issue with the favicon, as I was unsure how to create a new one for my website. After reading the documentation I was able to add the right favicon for my website and make it work.
 
 2. I encountered an issue with the navbar position, but after carefully reading the documentation on Bootstrap it was resolved.
@@ -106,10 +145,10 @@ Detailed testing was done on the website to ensure the website works properly.
 
 
 
-# Remaining bugs
+## Remaining bugs
 
-# Website checks using validation tools
+## Website checks using validation tools
 
-# Deployment
+## Deployment
 
-# Credits
+## Credits
