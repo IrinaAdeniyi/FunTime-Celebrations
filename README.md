@@ -85,7 +85,7 @@ The wireframes for this website were created using [Balsamiq](https://balsamiq.c
 
 18. Once I finalised the manual checks, I used tools like HTML and CSS validators, as well as the Lighthouse feature in Chrome DevTools. The lighthouse tool higlighted some issues that were resolved to the best of my ability.
 
-19. Finally the README file was updated.
+19. Finally the README file was updated - this was also updated throughout the development process.
 
 ## 📂 Project Structure
 - **assets/**: Contains the static files for the website.
@@ -100,19 +100,57 @@ The wireframes for this website were created using [Balsamiq](https://balsamiq.c
 
 ## Features
 1. Navbar with logo and links to different pages
+![](assets/features/navbar.png)
+
+- The navbar is responsive on all devices (burger on small screens). 
+
+- The *active* class from Bootstrap was used to highlight the current page. 
+
+- The logo takes you to the home page.
 
 
+2. Hero and About Us sections on home page
+![](assets/features/Hero-and-AboutUs.png)
 
+- The hero section has a playful title and paragraph, as well as a button to the booking page.
 
-2. Flip cards to showcase different party themes
+- The About Us section introduces the user to what we do and our experience.
 
-3. Image gallery for inspiration
+3. Services section on the home page
+![](assets/features/Services-cards.png)
 
-4. Booking call-to-action
+- This section is fully responsive in all screen sizes (though there is no left and right padding around the "Entertainment" title on 1022px - though I tried to resolve this, due to Bootstrap innate properties I was not able to correct this).
 
-5. Clean and simple navigation bar
+- The title is catchy and the paragraph text is engaging, while the button directs the user to the services page to find out more about what we offer.
 
-6. Footer with contact and social links
+4. Flip cards to showcase different party packages
+![](assets/features/flip-cards.png)
+
+- This section is responsive, however I would have liked to have 4 cards on one row on bigger screens. However, all my efforts to achieve this failed. The cards, on the other hand, still look good on two rows and they are easily readable.
+
+- On hoover the card turns to reveal details about the package.
+
+4. Image gallery for inspiration
+![](assets/features/GalleryPage.png)
+
+- Fully responsive: 1 column on small screens, 2 columns on medium screens and 3 columns on big screens
+
+4. Booking form with form validation
+![](assets/features/booking-form.png)
+
+- Fully responsive booking form - can't submit the form without the required information
+
+- When time is selected after I would have liked the dropdown to close, however this doesn't happen. As this is a Bootstrap element, I couldn't do much to change this.
+
+5. Styled confirmation page
+![](assets/features/Confirmation-page.png)
+
+- This page is fully responsive and matches the rest of the website.
+
+6. Footer with quick links, contact and social links
+![](assets/features/footer.png)
+
+- Fully responsive, clean footer
 
 ## Testing 
 Detailed testing was done on the website to ensure the website works properly.
@@ -122,9 +160,10 @@ Detailed testing was done on the website to ensure the website works properly.
 | Header     | Looks good in all screen sizes|  Works as expected        |
 | Logo       | On click takes you to home page                   | Works as expected         |
 | Navigation bar | Active page bold, colapse on phone size, logo only on mobile       | Works as expected         |
-| Book now button on navbar and header | Takes you to Book now page | Works as expected
-| Abouts us section | Looks good in all screen sizes | Works as expected |
+| All links in navbar take you to the right page | For example, Book Now akes you to the booking form page | Works as expected
+| Abouts us section | Looks good on all screen sizes | Works as expected |
 | Services section on home page | Links take you to the services page and cards display properly in all screen sizes | Works as expected
+| Services page | Looks good on all screens
 
 ## Troubleshooting
 1. I had an initial issue with the favicon, as I was unsure how to create a new one for my website. After reading the documentation I was able to add the right favicon for my website and make it work.
