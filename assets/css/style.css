@@ -83,7 +83,8 @@ main {
 
 .custom-heading {
     color: var(--highlight-color) !important;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .custom-paragraph {
