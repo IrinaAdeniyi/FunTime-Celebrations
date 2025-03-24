@@ -221,10 +221,25 @@ Detailed testing was done on the website to ensure the website works properly.
 
 ## Remaining bugs
 
-I would consider that I only have one remaining bug, which is the fact that the flip cards are displaying on two columns on big screens.  
+I would consider that I only have one remaining bug, which is the fact that the flip cards are displaying on two columns on big screens. 
+
+While efforts were made to optimize image sizes and load times, the Gallery images are intentionally high-quality and large to preserve detail. Lazy loading has been implemented for images where appropriate. However, further image compression for Gallery page could improve the performance of the page.
 
 ## Website checks using validation tools
 
+### Lighthouse scores
+#### Home Page
+![Home Page](assets/lighthouse-scores/Home.png)
+#### Services Page
+![Services Page](assets/lighthouse-scores/Services.png)
+#### Gallery Page
+![Gallery Page](assets/lighthouse-scores/Gallery.png)
+#### Book Now Page
+![Book Now Page](assets/lighthouse-scores/Book-Now.png)
+#### Confirmation Page
+![Confirmation Page](assets/lighthouse-scores/Confirmation.png)
+
+**Both the W3C Markup Validator and W3C CSS validator returned no errors.**
 
 ## Deployment
 
