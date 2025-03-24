@@ -287,8 +287,14 @@ ul {
 }
 
 /* GALLERY PAGE */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
 #photos {
     column-gap: 0;
+    line-height: 0;
 }
 
 /* BOOKING FORM PAGE */
@@ -399,6 +405,10 @@ footer {
         width: auto;
     }
 
+    #under-the-sea {
+        display: none;
+    }
+
 }
 
 /* Resolve card image on screens between 327px and 575px */
@@ -465,6 +475,10 @@ footer {
         column-count: 2;   
     }
 
+    #under-the-sea {
+        display: block;
+    }
+
     .book-now-hero {
         padding: 70px 70px;
         margin-bottom: -50px;
@@ -482,6 +496,10 @@ footer {
         height: auto;
         width: 91%;
         padding: 20px;
+    }
+
+    #under-the-sea {
+        display: none;
     }
 
     #photos {

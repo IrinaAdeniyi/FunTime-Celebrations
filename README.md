@@ -221,6 +221,7 @@ Detailed testing was done on the website to ensure the website works properly.
 
 ## Remaining bugs
 
+The only remaining bugs, I would consider to be 
 
 
 ## Website checks using validation tools
