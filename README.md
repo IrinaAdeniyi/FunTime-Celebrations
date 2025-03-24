@@ -5,11 +5,25 @@
 - A responsive, multi-page website built with HTML, CSS, and Bootstrap, showcasing fun and vibrant party themes for children’s celebrations. The project includes a gallery, service descriptions, and booking information, optimized for both desktop and mobile devices.
 - FunTime Celebrations is a party organising service for parents. FunTime Celebrations offers the following services: themed parties, various entertainments, options for venues and catering, through different packages. 
 
-##  🚀  Live Demo
+## Mockups
+
+### Phones
+![](assets/mockups/iphone12.png)
+
+### Tablets
+![](assets/mockups/tablet.png)
+
+### Laptops
+![](assets/mockups/laptop.png)
+
+### Bigger screens
+![](assets/mockups/Bigger-screens.png)
+
+##  Live Demo
 
 👉 View the website [here]()
 
-## 🛠 Technologies Used
+## Technologies Used
 
 HTML5
 
@@ -87,7 +101,7 @@ The wireframes for this website were created using [Balsamiq](https://balsamiq.c
 
 19. Finally the README file was updated - this was also updated throughout the development process.
 
-## 📂 Project Structure
+## Project Structure
 - **assets/**: Contains the static files for the website.
   - **css/**: The folder containing the main styles for the site (style.css).
   - **images/**: Contains all images for the website, with subfolders for the favicon, gallery and logo images.
@@ -152,6 +166,9 @@ The wireframes for this website were created using [Balsamiq](https://balsamiq.c
 
 - Fully responsive, clean footer
 
+## Possible future features
+In my user stories I had one *could-have* feature, that I did not manage to do, because of lack of time. This was a testimanials page, where parents can comment and give feedback, but also read other parent's opinions and experience. So this could be done in the future.
+
 ## Testing 
 Detailed testing was done on the website to ensure the website works properly.
 
@@ -193,8 +210,18 @@ Detailed testing was done on the website to ensure the website works properly.
 
 10. The flip cards created the biggest issues for me as I was unable to make them flip using Bootstrap cards. I finally used some resources from W3Schools and manage to create them. But the solution from this website  suggested to use *float*, which is affecting responsiveness. I managed to make them look good on all screen sizes, however, I would have preferred to have one row with for cards on big screens, instead of two columns. I tried using display: flex with a few different option (eg justify-content: space-evenly). However, this didn't work either.
 
+11. In the gallery page I managed to set different columns for different screen sizes, however I had trouble making the three columns fully cover the page.
+
+12. The booking form was easy to create using Bootstrap. I had to play with different sizes for the text areas and dropdowns to make it look good, but this was easy and fast.
+
+13. The confirmation page was easy to create - I had no issues here.
+
+14. When I used the *Lighthouse* tool, I had a few issues with the performance, mainly because of the photos, even though I used *shrink.media* to make the sizes under 300kb. Following the suggestions on *Lighthouse* I managed to considerably improve performance on all pages, by adding lazy loading and/or by preloading images.
+
 
 ## Remaining bugs
+
+
 
 ## Website checks using validation tools
 
