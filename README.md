@@ -163,7 +163,14 @@ Detailed testing was done on the website to ensure the website works properly.
 | All links in navbar take you to the right page | For example, Book Now akes you to the booking form page | Works as expected
 | Abouts us section | Looks good on all screen sizes | Works as expected |
 | Services section on home page | Links take you to the services page and cards display properly in all screen sizes | Works as expected
-| Services page | Looks good on all screens
+| Services page | Looks good on all screens | Works as expected
+| Flip cards | On hoover they flip to reveal more information | Works as expected
+| Gallery page | Fully responsive in all screen sizes: 1 column - phones, 2 columns - tablets and 3 columns - laptops and bigger screens | Works as expected
+| Booking form page | Fully responsive on all screens | Works as expected
+| Form validation | The form cannot be submitted without the required information | Works as expected
+| Confirmation page | Fully responsive on all devices and matches the rest of the website | Works as expected
+| All buttons and links | Take you to the right place | Works as expected
+| Footer | Fully responsive and containing all the necessary information | Works as expected
 
 ## Troubleshooting
 1. I had an initial issue with the favicon, as I was unsure how to create a new one for my website. After reading the documentation I was able to add the right favicon for my website and make it work.
@@ -182,6 +189,9 @@ Detailed testing was done on the website to ensure the website works properly.
 
 8. The home page was not showing properly on mobiles and tablets, so I used media queries to adjust how the navbar, text, cards and footer look on these screens.
 
+9. The text on the services cards on the *Services* page was spreading accross the page incontrolably, therefore I added some padding to *inline-block* display to correct this.
+
+10. The flip cards created the biggest issues for me as I was unable to make them flip using Bootstrap cards. I finally used some resources from W3Schools and manage to create them. But the solution from this website  suggested to use *float*, which is affecting responsiveness. I managed to make them look good on all screen sizes, however, I would have preferred to have one row with for cards on big screens, instead of two columns. I tried using display: flex with a few different option (eg justify-content: space-evenly). However, this didn't work either.
 
 
 ## Remaining bugs
