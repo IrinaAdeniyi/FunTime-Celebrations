@@ -21,7 +21,7 @@
 
 ##  Live Demo
 
-👉 View the website [here]()
+👉 View the website [here](https://irinaadeniyi.github.io/FunTime-Celebrations/)
 
 ## Technologies Used
 
@@ -210,7 +210,7 @@ Detailed testing was done on the website to ensure the website works properly.
 
 10. The flip cards created the biggest issues for me as I was unable to make them flip using Bootstrap cards. I finally used some resources from W3Schools and manage to create them. But the solution from this website  suggested to use *float*, which is affecting responsiveness. I managed to make them look good on all screen sizes, however, I would have preferred to have one row with for cards on big screens, instead of two columns. I tried using display: flex with a few different option (eg justify-content: space-evenly). However, this didn't work either.
 
-11. In the gallery page I managed to set different columns for different screen sizes, however I had trouble making the three columns fully cover the page.
+11. In the gallery page I managed to set different columns for different screen sizes, however I had trouble making the three columns fully cover the page. In the end I managed to fully cover the page by creating an id and applying to a photo, which is hidden on bigger screens, the remaining photos fully covering the page.
 
 12. The booking form was easy to create using Bootstrap. I had to play with different sizes for the text areas and dropdowns to make it look good, but this was easy and fast.
 
@@ -221,11 +221,38 @@ Detailed testing was done on the website to ensure the website works properly.
 
 ## Remaining bugs
 
-The only remaining bugs, I would consider to be 
-
+I would consider that I only have one remaining bug, which is the fact that the flip cards are displaying on two columns on big screens.  
 
 ## Website checks using validation tools
 
+
 ## Deployment
 
+The site was deployed to GitHub pages.
+
+I used the following steps to deploy:
+
+1. Go to repository FunTime Celebrations github.
+2. Settings on the top right corner.
+3. Locate Pages in the menu section on the left of the screen.
+4. Select main option for the branch.
+5. Click save.
+6. Reload the page and after a little while a link for the deplyed site will appear at the top.
+7. When you click the link it will take you to the site
+
+## Setup Instructions
+1. Clone my [repository](https://github.com/IrinaAdeniyi/FunTime-Celebrations?tab=readme-ov-file#start-of-content).
+
+2. Open index.html in your browser, or deploy via GitHub Pages.
+
 ## Credits
+1. The photos from this website were taken from 
+[pexels](https://www.pexels.com/)
+2. I used [AccessibleWEB](https://accessibleweb.com/color-contrast-checker/) and [coolors](https://coolors.co/) to help me with my colour scheme.
+3. I used sites like StackOverflow and W3Schools to resolve issues in my code, as well as AI.
+4. Starting steps and few lines of code came from  Love Running Project and other lessons.
+5. I used [Shrink.media](https://www.shrink.media/upload) to reduce the size of my images.
+6. I used [The Foodie Society](https://github.com/LukaB25/Foodie-Society/blob/main/README.md) README for inspiration for my README file, which was provided by my mentor.
+7. I used the help of my mentor and tutor to improve my website.
+
+

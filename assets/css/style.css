@@ -204,6 +204,10 @@ main {
     width: 92%;
 }
 
+.size-section-h1{
+    font-size: 3rem;
+}
+
 /* No bullet points */
 ul {
     list-style-type: none;
